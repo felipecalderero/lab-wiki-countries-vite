@@ -1,9 +1,13 @@
+import { Routes, Route } from "react-router-dom"; // <== IMPORT
 import "./App.css";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <div className="App">
-      <h1>LAB | React WikiCountries</h1>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </div>
   );
 }
